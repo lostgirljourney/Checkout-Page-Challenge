@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <meta name="theme-color" content="#F0BC5E" />
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/favicon.png" />
+  <title>Checkout Page</title>
+</head>
+
+<body>
+
+  <div id="header">
+    <span id="body-title">Checkout</span>
+  </div>
+
+  <div id="main">
+    <div id="rows">
+      <div class="cols" id="col1">
+
+        <form id="form-name" onsubmit="JavaScript:alertZero()">
+          <div id="contact" class="heads">
+            <span>Contact infomation</span>
+          </div>
+
+          <div id="email-label">
+            <label for="email" class="label-heads">E-mail</label>
+            <br>
+            <i class="material-icons mail">
+              mail
+            </i>
+            <input type="email" id="email" name="Email: " placeholder="Enter your email..." class="contain" required>
+          </div>
+
+          <div id="call-label">
+            <label for="tel" class="label-heads">Phone</label>
+            <br>
+            <i class="material-icons call">
+              call
+            </i>
+            <input type="tel" id="tel" name="Phone: " pattern="[+][0-9]{2}[0-9]{10}" placeholder="Enter your phone..."
+              class="contain" required>
+          </div>
+
+          <div id="address" class="heads">
+            <span>Shipping address</span>
+          </div>
+
+          <div id="name-label">
+            <label for="name" class="label-heads">Full name</label>
+            <br>
+            <i class="material-icons person">
+              person
+            </i>
+            <input type="name" id="name" placeholder="Your name..." class="contain" name="Name: " required>
+          </div>
+
+          <div id="add-label">
+            <label for="add" class="label-heads">Address</label>
+            <br>
+            <i class="material-icons home">
+              home
+            </i>
+            <input type="text" id="add" placeholder="Your address.." class="contain" name="Address: " required>
+          </div>
+
+          <div id="city-label">
+            <label for="city" class="label-heads">City</label>
+            <br>
+            <i class="material-icons apartment">
+              apartment
+            </i>
+            <input type="text" id="city" placeholder="Your city.." class="contain" name="City: " required>
+          </div>
+
+          <div id="country-label">
+            <label for="country" class="label-heads">Country</label>
+            <br>
+            <i class="material-icons public">
+              public
+            </i>
+            <select id="dropdown" class="contain" placeholder="Your country.." required name="Country: ">
+              <option disabled selected value>Your country..</option>
+              <option value="india">India</option>
+              <option value="usa">United States of America</option>
+              <option value="australia">Australia</option>
+            </select>
+          </div>
+
+          <div id="zip-label">
+            <label for="zip-input" class="label-heads">Postal code</label>
+            <br>
+            <i class="material-icons markunread_mailbox">
+              markunread_mailbox
+            </i>
+            <input type="text" pattern="[0-9]*" maxlength="6" required name="PIN Code: "
+              placeholder="Your postal code.." id="zip-input" class="contain">
+          </div>
+
+          <div id="check-label">
+            <label>
+              <input name="preferance" value="save" type="checkbox" class="input-check i" checked />
+              <span id="save-text">
+                Save this information for next time
+              </span>
+            </label>
+          </div>
+
+          <div id="submit-label">
+            <input name="preferance" value="Continue" type="submit" id="subbtn" />
+          </div>
+        </form>
+      </div>
+
+      <div class="cols" id="col2">
+
+        <div class="item-row" id="itm-row1">
+          <img class="pic" alt="img-1" src="assets/photo1.png">
+          <h4 class="item1 item-label">Vintage Backbag</h4>
+          <p class="item1">
+            <span class="spl">$54.99</span>&nbsp;&nbsp;<strike>$94.99</strike>
+          </p>
+          <p class="qty">
+            <input name="preferance" value="-" type="submit" class="btn-no minus" />
+            <span class="qty-no" id="qty1">1</span>
+            <input name="preferance" value="+" type="submit" class="btn-no plus" />
+          </p>
+        </div>
+
+        <div class="item-row" id="itm-row2">
+          <img class="pic" alt="img-2" src="assets/photo2.png">
+          <h4 class="item2 item-label">Levi Shoes</h4>
+          <p class="item2">
+            <span class="spl">$74.99</span>&nbsp;&nbsp;<strike>$124.99</strike>
+          </p>
+          <p class="qty">
+            <input name="preferance" value="-" type="submit" class="btn-no minus" />
+            <span class="qty-no" id="qty2">1</span>
+            <input name="preferance" value="+" type="submit" class="btn-no plus" />            
+          </p>
+        </div>
+
+        <hr class="details horizontal" id="hr1">
+
+        <div class="details">
+          <p class="detail-title">Shipping
+            <span class="total-price" id="sp">$19</span>
+          </p>
+        </div>
+
+        <hr class="details horizontal" id="hr2">
+
+        <div class="details">
+          <p class="detail-title">
+            Total
+            <span class="total-price" id="tp">$148.98</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    created by <a href="https://devchallenges.io/portfolio/lostgirljourney" target="_blank">@lostgirljourney</a>
+    -
+    devChallenges.io
+  </div>
+
+  <script src="vanilla.js" type="text/javascript"></script>
+
+</body>
+
+</html>
