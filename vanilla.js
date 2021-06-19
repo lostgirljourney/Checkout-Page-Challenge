@@ -59,11 +59,13 @@ function zeroHTML() {
 
 function alertZero() {
     if (document.getElementsByClassName("total-price")[0].innerHTML === "$0" &&
-    document.getElementsByClassName("total-price")[1].innerHTML === "$0") {
+        document.getElementsByClassName("total-price")[1].innerHTML === "$0") {
         alert("Can't process! Empty shopping cart...");
+        document.getElementById("form-name").location.reload();
     }
     else {
-        document.getElementById("form-name").action = "thankyou.html";
+        document.getElementById("form-name").action = "https://www.appreciationatwork.com/wp-content/uploads/2018/01/thank-you.jpg"
+        
         document.getElementById("form-name").submit();
     }
 }
