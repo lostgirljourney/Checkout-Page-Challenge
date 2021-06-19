@@ -39,7 +39,7 @@
   <img src = "assets/Screenshot-mobile.jpeg">
 </p>
 
-Challenge was to create a ***404 not found page*** following the design given in website. The page should be responsive.
+Challenge was to create a ***checkout page*** following the design given on the website. The page should be responsive.
 
 ### Built With
 
